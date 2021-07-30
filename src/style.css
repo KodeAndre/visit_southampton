@@ -3,6 +3,7 @@
     max-height: 100%;
     width: 100%;
     height: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -61,11 +62,28 @@ a {
     align-self: center;
 }
 
+/* Searchbar and button */
+
 .searchfield {
     border-radius: 10px;
     border: 2px solid #00000075;
+    height: 2em;
 }
 
 .searchfield:focus {
     outline: none;
+}
+
+.searchfield:after {
+    outline: none;
+    clear: both;
+}
+
+.searchbutton {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+    vertical-align: middle;
 }

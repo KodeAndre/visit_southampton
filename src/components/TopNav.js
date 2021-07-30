@@ -5,10 +5,9 @@ import ReactDOM from 'react-dom'
 import Style from "../style.css"
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch as Search } from '@fortawesome/free-solid-svg-icons'
 export default function TopNav() {
-
     return (
         <div id="nav">
             <div id="navleft">
@@ -28,8 +27,10 @@ export default function TopNav() {
                     <Link to="Map">Map</Link>
                 </h2>
                 <div id="Search">
-                    <input className="searchfield" type="text" placeholder="Search..."/>
-                    <input className="searchbutton" type="submit" id="search" value="Submit"/>
+                    <form action="https://www.google.com/search" target="_blank">
+                    <input className="searchfield" type="text" placeholder="Search..." name="q" />
+                    <button className="searchbutton" type="submit"><FontAwesomeIcon icon={Search} /></button>
+                    </form>
                 </div>
                 
             </div>
