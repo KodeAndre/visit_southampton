@@ -27,7 +27,7 @@
         background-color: #7B9FC3;
         transition: all .2s ease;
         z-index: 99999999;
-        background: linear-gradient(150deg, #36375B 25%, #7B9FC3 1%);
+        background: linear-gradient(90deg, #36375B 20%, #7B9FC3 1%);
       }
       
       .scrolled{
@@ -353,6 +353,13 @@ a {
     z-index: -1;
 }
 
+/* About */
+
+#about {
+    margin-left: 50px;
+    text-align: left;
+}
+
 /* Footer */
 
 #footer {
@@ -363,6 +370,8 @@ a {
     color: #fff;
     width: 100%;
 }
+
+/* Map css */
 
 .map-container {
     position: absolute;
