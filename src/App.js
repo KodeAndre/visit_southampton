@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+// eslint-disable-next-line
+import React, { setState, useEffect, Suspense } from "react"
+// eslint-disable-next-line
+import ReactDOM from "react-dom"
+// eslint-disable-next-line
+import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
+// eslint-disable-next-line
+import Style from "./style.css"
 
-function App() {
+import About from "./components/About"
+import PlacesToVisit from "./components/PlacesToVisit"
+import AreaMap from "./components/AreaMap"
+import TopNav from "./components/TopNav"
+import Content from "./components/Content"
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Suspense fallback="loading">
+    <div id="appBody">
+
+      <Router basename="/visit_southampton">
+
+      <div id="main">
+      
+        <div>
+            <TopNav />
+        </div>
+
+        <div>
+          <Switch>
+            <Route exact path="/" component={Content} />
+          </Switch>
+        </div>
+
+        <div id="about">        
+          <Switch>
+            <Route path="/About" component={About} />
+          </Switch>
+        </div>
+        
+        <div id="areamap">
+          <Switch>
+            <Route path="/Map" component={AreaMap} />
+          </Switch>
+        </div>
+
+        <div id="places">
+          <Switch>
+            <Route path="/PlacesToVisit" component={PlacesToVisit} />
+          </Switch>
+        </div>
+
+      </div>
+
+      </Router>
+
     </div>
+    </Suspense>
   );
 }
-
-export default App;

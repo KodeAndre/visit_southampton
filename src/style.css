@@ -1,0 +1,71 @@
+:root {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Navbar css */
+
+#nav {
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 0fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Navleft navright"; 
+  width: 100%; 
+  height: 100%; 
+    max-height: 174px;
+    background-color: #7B9FC3;
+}
+
+#navleft {
+    background-color: #36375B;
+    color: #fff;
+    justify-self: start; 
+    grid-area: Navleft; 
+    padding-right: 300px;
+    background: linear-gradient(150deg, #36375B 50%, #7B9FC3 1%);
+    word-wrap: break-word;
+    width: 250px;
+}
+
+#navright {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "About Places Map Search"; 
+    grid-area: navright; 
+    background-color: #7B9FC3;
+    margin: 0;
+}
+
+#About { grid-area: About; align-self: center; }
+#Places { grid-area: Places; align-self: center; }
+#Map { grid-area: Map; align-self: center; }
+#Search {
+    grid-area: Search;
+    align-self: center;
+}
+
+.searchfield {
+    border-radius: 10px;
+    border: 2px solid #00000075;
+}
+
+.searchfield:focus {
+    outline: none;
+}
