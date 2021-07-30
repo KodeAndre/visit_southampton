@@ -3,12 +3,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import Style from "../style.css"
+import demo from "../media/demo.mp4"
 
 export default function Content() {
 
     return (
         <div>
-            <h2>Content here</h2>
+            <video autoPlay muted loop width="100%" height="auto" poster="https://dc-southampton.s3.amazonaws.com/videos/southampton-hero-video-poster.jpg?mtime=20190926112353&focal=none">
+                <source src={demo} type="video/mp4"/>
+            </video>
         </div>
     )
 }

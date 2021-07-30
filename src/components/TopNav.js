@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
@@ -7,33 +7,62 @@ import Style from "../style.css"
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch as Search } from '@fortawesome/free-solid-svg-icons'
-export default function TopNav() {
+
+export default function Navbar() {
+
+    const [scrolled, setScrolled] = React.useState(false);
+  
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 149 ) {
+        setScrolled(true);
+      }
+      else {
+        setScrolled(false);
+      }
+    }
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll)
+    })
+  
+    let x=['navbar'];
+    if (scrolled){
+      x.push('scrolled');
+    }
+
     return (
-        <div id="nav">
-            <div id="navleft">
-                <h1 id="Title">
-                    <Link to="/">Visit Southampton</Link>
-                </h1>
-            </div>
-            
-            <div id="navright">
+      <div className={x.join(" ")}>
+
+                <div className="navleft">
+                        <h1 id="Title">
+                            <Link to="/">Visit Southampton</Link>
+                        </h1>
+                </div>
+  
+          <div className="navright">
+
                 <h2 id="About">
                     <Link to="About">About</Link>
                 </h2>
+
                 <h2 id="Places">
                     <Link to="PlacesToVisit">Places To Visit</Link>
                 </h2>
+
                 <h2 id="Map">
                     <Link to="Map">Map</Link>
                 </h2>
+
                 <div id="Search">
-                    <form action="https://www.google.com/search" target="_blank">
+
+                <form action="https://www.google.com/search" target="_blank">
                     <input className="searchfield" type="text" placeholder="Search..." name="q" />
                     <button className="searchbutton" type="submit"><FontAwesomeIcon icon={Search} /></button>
-                    </form>
+                </form>
+
                 </div>
-                
-            </div>
-        </div>
+          </div>
+  
+      </div>
     )
-}
+  };

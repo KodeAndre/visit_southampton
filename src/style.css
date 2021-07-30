@@ -1,8 +1,263 @@
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  { 
+    :root {
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 16px;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    /* Navbar css */
+    
+    .navbar{
+        width: 100%;
+        min-height: 100px;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #7B9FC3;
+        transition: all .2s ease;
+        z-index: 99999999;
+        background: linear-gradient(150deg, #36375B 25%, #7B9FC3 1%);
+      }
+      
+      .scrolled{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #7B9FC3;
+        z-index: 99999999;
+        height: 100px;
+      }
+    
+      #Title {
+          word-break: break-word;
+          width: 250px;
+      }
+    
+        .navleft {
+            padding-right: 350px;
+        }
+    
+        .navright {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "About Places Map Search";
+        width: 100%;
+        height: 100%;
+      }
+    
+        #About { grid-area: About; align-self: center; }
+        #Places { grid-area: Places; align-self: center; }
+        #Map { grid-area: Map; align-self: center; }
+        #Search { grid-area: Search; align-self: center; }
+    
+    /* Searchbar and button */
+    
+    .searchfield {
+        border-radius: 10px;
+        border: 2px solid #00000075;
+        height: 2em;
+    }
+    
+    .searchfield:focus {
+        outline: none;
+    }
+    
+    .searchfield:after {
+        outline: none;
+        clear: both;
+    }
+    
+    .searchbutton {
+        background: none;
+        border: none;
+        font-size: 26px;
+        cursor: pointer;
+        color: #fff;
+        vertical-align: middle;
+    }
+    
+    /* Content */
+    
+    #content {
+        margin-top: auto;
+        z-index: -1;
+    }
+    
+    /* Footer */
+    
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #7B9FC3;
+        color: #fff;
+        width: 100%;
+    }
+    
+    .map-container {
+        position: absolute;
+        top: 149px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 78.1%;
+      }
+    
+      .sidebarStyle {
+        display: none;
+        position: absolute;
+        top: 150x;
+        left: 0;
+        margin: 12px;
+        background-color: #404040;
+        color: #ffffff;
+        z-index: 1 !important;
+        padding: 6px;
+        font-weight: bold;
+      }
+
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {  }
+
+/* small landscape tablets, laptops, and desktops */
+@media (min-width:769px) and (max-width: 1023px)  { 
+    :root {
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 16px;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    /* Navbar css */
+    
+    .navbar{
+        width: 100%;
+        min-height: 100px;
+        height: 150px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #7B9FC3;
+        transition: all .2s ease;
+        z-index: 99999999;
+        background: linear-gradient(150deg, #36375B 30%, #7B9FC3 1%);
+        font-size: 0.8em;
+      }
+      
+
+      .scrolled{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #7B9FC3;
+        z-index: 99999999;
+        height: 100px;
+      }
+    
+      #Title {
+          word-break: break-word;
+          width: 200px;
+      }
+    
+        .navleft {
+            padding-right: 75px;
+        }
+    
+        .navright {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1.3fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-template-areas:
+          "About Places Map Search";
+        width: 100%;
+        height: 100%;
+      }
+    
+        #About { grid-area: About; align-self: center; }
+        #Places { grid-area: Places; align-self: center; }
+        #Map { grid-area: Map; align-self: center; }
+        #Search { grid-area: Search; align-self: center; }
+    
+    /* Searchbar and button */
+    
+    .searchfield {
+        border-radius: 10px;
+        border: 2px solid #00000075;
+        height: 2em;
+    }
+    
+    .searchfield:focus {
+        outline: none;
+    }
+    
+    .searchfield:after {
+        outline: none;
+        clear: both;
+    }
+    
+    .searchbutton {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        vertical-align: middle;
+    }
+    
+    /* Content */
+    
+    #content {
+        margin-top: auto;
+        z-index: -1;
+    }
+    
+    /* Footer */
+    
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #7B9FC3;
+        color: #fff;
+        width: 100%;
+    }
+    
+    }
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { 
 :root {
     max-width: 100%;
     max-height: 100%;
-    width: 100%;
-    height: 100%;
     font-size: 16px;
 }
 
@@ -17,50 +272,53 @@ a {
 
 /* Navbar css */
 
-#nav {
-    display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 0fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "Navleft navright"; 
-  width: 100%; 
-  height: 100%; 
-    max-height: 174px;
+.navbar{
+    width: 100%;
+    min-height: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #7B9FC3;
-}
-
-#navleft {
-    background-color: #36375B;
-    color: #fff;
-    justify-self: start; 
-    grid-area: Navleft; 
-    padding-right: 300px;
-    background: linear-gradient(150deg, #36375B 50%, #7B9FC3 1%);
-    word-wrap: break-word;
-    width: 250px;
-}
-
-#navright {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "About Places Map Search"; 
-    grid-area: navright; 
+    transition: all .2s ease;
+    z-index: 99999999;
+    background: linear-gradient(150deg, #36375B 25%, #7B9FC3 1%);
+  }
+  
+  .scrolled{
+    position: sticky;
+    top: 0;
+    left: 0;
     background-color: #7B9FC3;
-    margin: 0;
-}
+    z-index: 99999999;
+    height: 100px;
+  }
 
-#About { grid-area: About; align-self: center; }
-#Places { grid-area: Places; align-self: center; }
-#Map { grid-area: Map; align-self: center; }
-#Search {
-    grid-area: Search;
-    align-self: center;
-}
+  #Title {
+      word-break: break-word;
+      width: 250px;
+  }
+
+    .navleft {
+        padding-right: 350px;
+    }
+
+    .navright {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "About Places Map Search";
+    width: 100%;
+    height: 100%;
+  }
+
+    #About { grid-area: About; align-self: center; }
+    #Places { grid-area: Places; align-self: center; }
+    #Map { grid-area: Map; align-self: center; }
+    #Search { grid-area: Search; align-self: center; }
 
 /* Searchbar and button */
 
@@ -86,4 +344,47 @@ a {
     cursor: pointer;
     color: #fff;
     vertical-align: middle;
+}
+
+/* Content */
+
+#content {
+    margin-top: auto;
+    z-index: -1;
+}
+
+/* Footer */
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #7B9FC3;
+    color: #fff;
+    width: 100%;
+}
+
+.map-container {
+    position: absolute;
+    top: 149px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 78.1%;
+  }
+
+  .sidebarStyle {
+    display: none;
+    position: absolute;
+    top: 150x;
+    left: 0;
+    margin: 12px;
+    background-color: #404040;
+    color: #ffffff;
+    z-index: 1 !important;
+    padding: 6px;
+    font-weight: bold;
+  }
+
 }

@@ -12,6 +12,7 @@ import PlacesToVisit from "./components/PlacesToVisit"
 import AreaMap from "./components/AreaMap"
 import TopNav from "./components/TopNav"
 import Content from "./components/Content"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
@@ -22,11 +23,9 @@ export default function App() {
 
       <div id="main">
       
-        <div>
             <TopNav />
-        </div>
-
-        <div>
+      
+        <div id="content">
           <Switch>
             <Route exact path="/" component={Content} />
           </Switch>
@@ -48,6 +47,10 @@ export default function App() {
           <Switch>
             <Route path="/PlacesToVisit" component={PlacesToVisit} />
           </Switch>
+        </div>
+
+        <div id="footer">
+          <Footer />
         </div>
 
       </div>
