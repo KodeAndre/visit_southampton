@@ -56,7 +56,7 @@ export default function Navbar() {
                 <div id="Search">
 
                 <form action="https://www.google.com/search" target="_blank">
-                    <input className="searchfield" type="text" placeholder="Search..." name="q" />
+                    <input className="searchfield" type="form" placeholder="Search..." name="q" />
                     <button className="searchbutton" type="submit"><FontAwesomeIcon icon={Search} /></button>
                 </form>
 
