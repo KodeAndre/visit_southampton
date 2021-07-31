@@ -49,10 +49,10 @@ export default function Album() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Thing in Southampton
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Information about the thing
                     </Typography>
                   </CardContent>
                   <CardActions>
