@@ -363,15 +363,40 @@ a {
     text-align: left;
 }
 
+/* Places */
+
+#placesContent {
+    text-align: center;
+}
+
 /* Footer */
 
 #footer {
     position: fixed;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Creator Info";
     bottom: 0;
     left: 0;
     background-color: #7B9FC3;
     color: #fff;
     width: 100%;
+}
+
+#Creator {
+    margin-left: 50px;
+    grid-area: Creator;
+}
+
+#Info {
+    grid-area: Info;
+    justify-self: end;
+    margin-right: 50px;
 }
 
 /* Map css */

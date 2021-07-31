@@ -7,7 +7,7 @@ import Style from "../style.css"
 export default function Places() {
 
     return (
-        <div>
+        <div id="placesContent">
             <h2>places here</h2>
         </div>
     )

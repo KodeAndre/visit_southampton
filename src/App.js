@@ -49,7 +49,7 @@ export default function App() {
           </Switch>
         </div>
 
-        <div id="footer">
+        <div>
           <Footer />
         </div>
 
