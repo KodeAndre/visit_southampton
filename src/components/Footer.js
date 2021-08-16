@@ -3,6 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import Style from "../style.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram as Insta } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
 
@@ -16,9 +18,11 @@ export default function Footer() {
                 <h3>
                     Our Socials
                 </h3>
-                <p>
-                    instagram icon
-                </p>
+                
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={Insta} style={{fontSize: "24px"}} />
+                </a>
+
             </div>
         </div>
     )
