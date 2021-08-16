@@ -10,6 +10,7 @@ export default function Places() {
 
     function handleChange(e) {
         setFilter({value: e.target.value})
+        console.clear()
         console.log("User filtered by: " + e.target.value)
     }
     
