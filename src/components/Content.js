@@ -8,6 +8,11 @@ import demo from "../media/demo.mp4"
 import Card from "./Card"
 
 export default function Content() {
+    const elmnt = document.getElementById("scrollhere")
+
+    function ScrollDown() {
+        elmnt.scrollIntoView();
+    }
 
     return (
         <div>
@@ -18,12 +23,12 @@ export default function Content() {
             </div>
 
             <div>
-                <span className="material-icons" id="arrowdown">
+                <span onClick={ScrollDown} className="material-icons" id="arrowdown">
                 south
                 </span>
             </div>
 
-            <div>
+            <div id="scrollhere">
                 <Card />
             </div>
             
