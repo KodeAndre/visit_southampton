@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
@@ -8,10 +8,10 @@ import demo from "../media/demo.mp4"
 import Card from "./Card"
 
 export default function Content() {
-    const elmnt = document.getElementById("scrollhere")
+    const ref = useRef(null)
 
     function ScrollDown() {
-        elmnt.scrollIntoView();
+        ref.current.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
 
     return (
@@ -28,7 +28,7 @@ export default function Content() {
                 </span>
             </div>
 
-            <div id="scrollhere">
+            <div id="scroll" ref={ref}>
                 <Card />
             </div>
             
