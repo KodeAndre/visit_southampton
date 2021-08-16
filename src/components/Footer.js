@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import Style from "../style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram as Insta } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram as Insta, faFacebook as Fb, faGithub as Git } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
 
@@ -19,9 +19,18 @@ export default function Footer() {
                     Our Socials
                 </h3>
                 
-                <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={Insta} style={{fontSize: "24px"}} />
-                </a>
+                <div id="socials">
+                    <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={Insta} style={{fontSize: "24px"}} />
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={Fb} style={{fontSize: "24px"}} />
+                    </a>
+
+                    <a href="https://github.com/KodeAndre" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={Git} style={{fontSize: "24px"}} />
+                    </a>
+                </div>
 
             </div>
         </div>

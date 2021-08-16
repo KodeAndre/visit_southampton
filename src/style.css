@@ -112,6 +112,10 @@ h1 {
     text-align: center;
 }
 
+#mainContent {
+    margin-top: 40px;
+}
+
 #arrowdown {
     font-size: 64px;
     margin-top: 50px;
@@ -177,6 +181,11 @@ h1 {
     justify-self: end;
     margin-right: 50px;
     margin-bottom: 5px;
+}
+
+#socials {
+    display: flex;
+    gap: 0 5px;
 }
 
 /* Map css */
