@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
@@ -6,34 +6,39 @@ import Style from "../style.css"
 
 export default function Places() {
 
+    const [filter, setFilter] = useState(0);
 
+    function handleChange(e) {
+        setFilter({value: e.target.value})
+        console.log("User filtered by: " + e.target.value)
+    }
     
     return (
         <div id="placesContent">
             <h2>Places and Events to visit and try out!</h2>
-            
-            <form>
-                <label htmlFor="places">Filter by place: </label>
 
-                <select name="places" id="places" defaultValue="location">
+                <label htmlFor="restFilter">Food type: </label>
+
+                <select name="restFilter" id="restFilter" defaultValue="location" onChange={handleChange}>
 
                     <option value="location" disabled>Choose</option>
 
-                    <optgroup label="Australian Places">
+                    <optgroup label="Restaurants">
                         <option value="Sydney">Sydney</option>
                         <option value="Melbourne">Melbourne</option>
                         <option value="Brisbane">Brisbane</option>
                     </optgroup>
 
-                    <optgroup label="Norwegian Places">
-                        <option value="Bergen">Bergen</option>
-                        <option value="Oslo">Oslo</option>
-                        <option value="Trondheim">Trondheim</option>
+                    <optgroup label="Fast Foods">
+                        <option value="McDonalds">McDonalds</option>
+                        <option value="Dominos">Dominos</option>
+                        <option value="KFC">KFC</option>
                     </optgroup>
 
                 </select>
 
-            </form>
+                <p>Filter applied: {filter.value}</p>
+
         </div>
     )
 }

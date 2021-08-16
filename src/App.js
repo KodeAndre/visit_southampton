@@ -51,7 +51,7 @@ export default function App() {
           </Switch>
         </div>
 
-        <div>
+        <div id="footer-wrapper" style={{height: "91px"}}>
           <Footer />
         </div>
 
