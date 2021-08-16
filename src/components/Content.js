@@ -5,8 +5,6 @@ import ReactDOM from 'react-dom'
 import Style from "../style.css"
 import demo from "../media/demo.mp4"
 
-import Card from "./Card"
-
 export default function Content() {
     const ref = useRef(null)
 
@@ -29,7 +27,7 @@ export default function Content() {
             </div>
 
             <div id="scroll" ref={ref}>
-                <Card />
+                <p>this used to be actual content</p>
             </div>
             
         </div>
