@@ -5,54 +5,42 @@ import ReactDOM from 'react-dom'
 import Style from "../style.css"
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
-mapboxgl.accessToken = 
-    'pk.eyJ1IjoiYW5hcmNoeXRyZXgiLCJhIjoiY2tycXdyNDRkMXV2dTJvbm9sOTQ2enZweCJ9.4cGvNw7zcxGT8L_PPFAg9Q'
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5hcmNoeXRyZXgiLCJhIjoiY2tzZWcxbXRkMGdveTMwb2Y5emJiYWIzayJ9.TLf8xLuGslSixuDMhQd_rQ';
 
-    export default function Map() {
-        const mapContainerRef = useRef(null);
-      
-        const [lng, setLng] = useState(-1.4072);
-        const [lat, setLat] = useState(50.9010);
-        const [zoom, setZoom] = useState(12.95);
-      
-        // Initialize map when component mounts
-        useEffect(() => {
-          const map = new mapboxgl.Map({
-            container: mapContainerRef.current,
-            style: 'mapbox://styles/anarchytrex/ckrqwu646627y19o1yailgj6z',
-            center: [lng, lat],
-            zoom: zoom
-          });
-      
-          // Add navigation control (the +/- zoom buttons)
-          map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-      
-          map.on('move', () => {
-            setLng(map.getCenter().lng.toFixed(4));
-            setLat(map.getCenter().lat.toFixed(4));
-            setZoom(map.getZoom().toFixed(2));
-          });
+export default function App() {
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const [lng, setLng] = useState(-1.4072);
+  const [lat, setLat] = useState(50.9010);
+  const [zoom, setZoom] = useState(12.95);
 
-          map.addControl(new mapboxgl.GeolocateControl({
-            positionOptions: {
-            enableHighAccuracy: true
-            },
-            trackUserLocation: true
-            },
-          ));
-      
-          // Clean up on unmount
-          return () => map.remove();
-        }, []); // eslint-disable-line react-hooks/exhaustive-deps
-      
-        return (
-          <div>
-            <div className='sidebarStyle'>
-              <div>
-                Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-              </div>
-            </div>
-            <div className='map-container' ref={mapContainerRef} />
-          </div>
-        );
-      };
+  
+  useEffect(() => {
+    if (map.current) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: 'mapbox://styles/anarchytrex/ckrqwu646627y19o1yailgj6z',
+      center: [lng, lat],
+      zoom: zoom
+    });
+  });
+
+  useEffect(() => {
+    if (!map.current) return; // wait for map to initialize
+    map.current.on('move', () => {
+      setLng(map.current.getCenter().lng.toFixed(4));
+      setLat(map.current.getCenter().lat.toFixed(4));
+      setZoom(map.current.getZoom().toFixed(2));
+    });
+  });
+
+  return (
+    <div>
+      <div className="sidebar">
+        Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+      </div>
+      <div ref={mapContainer} className="map-container" />
+    </div>
+  );
+}
+

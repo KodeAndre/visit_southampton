@@ -14,10 +14,10 @@ export default function Navbar() {
   
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 149 ) {
+      if (offset > 150 ) {
         setScrolled(true);
       }
-      else {
+      if (offset <= 150 ) {
         setScrolled(false);
       }
     }
@@ -40,6 +40,10 @@ export default function Navbar() {
                 </div>
   
           <div className="navright">
+
+                <h2 id="Home">
+                    <Link to="/">Home</Link>
+                </h2>
 
                 <h2 id="About">
                     <Link to="About">About</Link>

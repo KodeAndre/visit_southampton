@@ -22,8 +22,10 @@ export default function App() {
       <Router basename="/visit_southampton">
 
       <div id="main">
-      
+          <div className="nav-wrapper" style={{height: "150px"}}>
             <TopNav />
+          </div>
+            
       
         <div id="content">
           <Switch>
