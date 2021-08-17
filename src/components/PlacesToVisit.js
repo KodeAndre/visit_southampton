@@ -27,12 +27,12 @@ export default function Places() {
 
                 <select name="restFilter" id="restFilter" defaultValue="default" onChange={handleChange1}>
 
-                    <option value="default" disabled>Choose</option>
+                    <option value="default" disabled>Choose One</option>
 
                     <optgroup label="Restaurants">
-                        <option value="Sydney">Sydney</option>
-                        <option value="Melbourne">Melbourne</option>
-                        <option value="Brisbane">Brisbane</option>
+                        <option value="Dolly Dimples">Dolly Dimples</option>
+                        <option value="Peppes Pizza">Peppes Pizza</option>
+                        <option value="Egon">Egon</option>
                     </optgroup>
 
                     <optgroup label="Fast Foods">
@@ -47,19 +47,11 @@ export default function Places() {
 
                 <select name="eventFilter" id="eventFilter" defaultValue="default" onChange={handleChange2}>
 
-                    <option value="default" disabled>Choose</option>
+                    <option value="default" disabled>Choose One</option>
 
-                    <optgroup label="Restaurants">
-                        <option value="Sydney">Sydney</option>
-                        <option value="Melbourne">Melbourne</option>
-                        <option value="Brisbane">Brisbane</option>
-                    </optgroup>
-
-                    <optgroup label="Event">
                         <option value="Fiesta">Fiesta</option>
                         <option value="Party">Party</option>
                         <option value="LAN">LAN</option>
-                    </optgroup>
 
                     </select>
 
