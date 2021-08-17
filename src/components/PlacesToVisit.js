@@ -18,7 +18,7 @@ export default function Places() {
         setEve({value: e.target.value})
         console.log("User filtered by: " + e.target.value)
     }
-    
+
     return (
         <div id="placesContent">
             <h2>Places and Events to visit and try out!</h2>
@@ -58,12 +58,12 @@ export default function Places() {
                     <optgroup label="Event">
                         <option value="Fiesta">Fiesta</option>
                         <option value="Party">Party</option>
-                        <option value="Orgy">Orgy</option>
+                        <option value="LAN">LAN</option>
                     </optgroup>
 
                     </select>
 
-                <p>Filters applied: {rest.value}, {eve.value}</p>
+                <p>Filters applied: <b>{rest.value}</b>, <b>{eve.value}</b></p>
         </div>
     )
 }

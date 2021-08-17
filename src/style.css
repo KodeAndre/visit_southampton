@@ -157,6 +157,10 @@ h1 {
     text-align: center;
 }
 
+select {
+    margin-right: 10px;
+}
+
 /* Footer */
 
 #footer {
