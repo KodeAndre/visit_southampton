@@ -117,6 +117,8 @@ h1 {
 
 #mainContent {
     margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #arrowdown {
@@ -172,6 +174,8 @@ h1 {
     background-color: #7B9FC3;
     color: #fff;
     width: 100%;
+    margin: 0;
+    padding-bottom: 1px;
 }
 
 #Creator {
