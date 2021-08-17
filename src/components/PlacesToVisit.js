@@ -6,11 +6,16 @@ import Style from "../style.css"
 
 export default function Places() {
 
-    const [filter, setFilter] = useState(0);
+    const [rest, setRest] = useState(0);
+    const [eve, setEve] = useState(0);
 
-    function handleChange(e) {
-        setFilter({value: e.target.value})
-        console.clear()
+    function handleChange1(e) {
+        setRest({value: e.target.value})
+        console.log("User filtered by: " + e.target.value)
+    }
+
+    function handleChange2(e) {
+        setEve({value: e.target.value})
         console.log("User filtered by: " + e.target.value)
     }
     
@@ -20,9 +25,9 @@ export default function Places() {
 
                 <label htmlFor="restFilter">Food type: </label>
 
-                <select name="restFilter" id="restFilter" defaultValue="location" onChange={handleChange}>
+                <select name="restFilter" id="restFilter" defaultValue="default" onChange={handleChange1}>
 
-                    <option value="location" disabled>Choose</option>
+                    <option value="default" disabled>Choose</option>
 
                     <optgroup label="Restaurants">
                         <option value="Sydney">Sydney</option>
@@ -38,8 +43,27 @@ export default function Places() {
 
                 </select>
 
-                <p>Filter applied: {filter.value}</p>
+                <label htmlFor="eventFilter">Event type: </label>
 
+                <select name="eventFilter" id="eventFilter" defaultValue="default" onChange={handleChange2}>
+
+                    <option value="default" disabled>Choose</option>
+
+                    <optgroup label="Restaurants">
+                        <option value="Sydney">Sydney</option>
+                        <option value="Melbourne">Melbourne</option>
+                        <option value="Brisbane">Brisbane</option>
+                    </optgroup>
+
+                    <optgroup label="Event">
+                        <option value="Fiesta">Fiesta</option>
+                        <option value="Party">Party</option>
+                        <option value="Orgy">Orgy</option>
+                    </optgroup>
+
+                    </select>
+
+                <p>Filters applied: {rest.value}, {eve.value}</p>
         </div>
     )
 }
