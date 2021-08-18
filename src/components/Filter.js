@@ -21,7 +21,7 @@ export default function Filter() {
 
     return (
         <div>
-            <label htmlFor="restFilter">Food type: </label>
+            <label htmlFor="restFilter" className="filter">Food type: </label>
 
             <div>
                 <select name="restFilter" id="restFilter" defaultValue="default" onChange={handleChange1}>
@@ -40,7 +40,7 @@ export default function Filter() {
                 </select>
             </div>
 
-            <label htmlFor="eventFilter">Event type: </label>
+            <label htmlFor="eventFilter" className="filter">Event type: </label>
 
             <div>
 

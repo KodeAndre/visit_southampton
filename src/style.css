@@ -166,21 +166,18 @@ h1 {
     text-align: center;
 }
 
-select {
-    margin-right: 10px;
-    white-space: wrap;
-}
-
 details {
     position: fixed;
-    top: 220px;
+    top: 200px;
     bottom: 0;
-    padding: 4px;
+    padding: 5px 0 0 0;
     width: 200px;
-    background-color: #eeeeee;
-    border: none;
-    box-shadow: 1px 1px 2px #bbbbbb;
-  }
+    background-color: #7B9FC3;
+}
+
+.filter {
+    margin: 10px 0 10px 0;
+}
 
 summary {
     cursor: pointer;

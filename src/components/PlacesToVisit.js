@@ -11,14 +11,14 @@ export default function Places() {
     return (
         <div id="placesContent">
             <h2>Places and Events to visit and try out!</h2>
-            <details open>
+            <details>
 
                 <summary>
-                    Click for filters
+                    Click for list of filters
                 </summary>
 
                 <Filter />
-                
+
             </details>
         </div>
     )
