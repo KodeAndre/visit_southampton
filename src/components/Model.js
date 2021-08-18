@@ -34,19 +34,30 @@ export default function Model() {
     // Ref to the controls, so that we can update them on every frame using useFrame
     const controls = useRef();
     useFrame((state) => controls.current.update());
-    return <orbitControls ref={controls} args={[camera, domElement]} />;
+    return <orbitControls 
+    ref={controls} 
+    args={[camera, domElement]}
+    autoRotate={true}
+    autoRotateSpeed={2}
+     />;
   };
 
+  const Loading = () => {
+    return <p>
+      Loading...
+    </p>
+  }
+
   return (
-    <div id="planet">
+    <div id="canvas">
     <Canvas>
-    <CameraControls />
-    <Camera position={[0, 0, 40]} />
-    <Suspense fallback={"Loading"}>
-      <Asset url="models/scene.gltf" />
-    </Suspense>
-    <directionalLight intensity={0.5} />
-    <ambientLight intensity={1} />
+      <CameraControls />
+      <Camera position={[0, 10, 43]} />
+      <Suspense fallback={Loading}>
+        <Asset url="models/mclaren.glb" />
+      </Suspense>
+      <directionalLight intensity={0.1} />
+      <ambientLight intensity={1} />
     </Canvas>
     </div>
   );

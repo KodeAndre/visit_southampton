@@ -196,7 +196,7 @@ label, summary, #filterSum {
     bottom: 0;
 }
 
-#planet {
+#canvas {
     height: 900px;
     width: 900px;
     vertical-align: middle;
