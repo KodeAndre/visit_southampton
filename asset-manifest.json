@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/visit_southampton/static/css/main.f261ccbb.chunk.css",
-    "main.js": "/visit_southampton/static/js/main.594afcf5.chunk.js",
-    "main.js.map": "/visit_southampton/static/js/main.594afcf5.chunk.js.map",
+    "main.css": "/visit_southampton/static/css/main.48f64d9c.chunk.css",
+    "main.js": "/visit_southampton/static/js/main.b3ecbc5e.chunk.js",
+    "main.js.map": "/visit_southampton/static/js/main.b3ecbc5e.chunk.js.map",
     "runtime-main.js": "/visit_southampton/static/js/runtime-main.b61c81b9.js",
     "runtime-main.js.map": "/visit_southampton/static/js/runtime-main.b61c81b9.js.map",
     "static/js/2.eceab429.chunk.js": "/visit_southampton/static/js/2.eceab429.chunk.js",
     "static/js/2.eceab429.chunk.js.map": "/visit_southampton/static/js/2.eceab429.chunk.js.map",
     "index.html": "/visit_southampton/index.html",
-    "static/css/main.f261ccbb.chunk.css.map": "/visit_southampton/static/css/main.f261ccbb.chunk.css.map",
+    "static/css/main.48f64d9c.chunk.css.map": "/visit_southampton/static/css/main.48f64d9c.chunk.css.map",
     "static/js/2.eceab429.chunk.js.LICENSE.txt": "/visit_southampton/static/js/2.eceab429.chunk.js.LICENSE.txt",
     "static/media/demo.32647d13.mp4": "/visit_southampton/static/media/demo.32647d13.mp4",
     "static/media/souton.646e5a34.png": "/visit_southampton/static/media/souton.646e5a34.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.b61c81b9.js",
     "static/js/2.eceab429.chunk.js",
-    "static/css/main.f261ccbb.chunk.css",
-    "static/js/main.594afcf5.chunk.js"
+    "static/css/main.48f64d9c.chunk.css",
+    "static/js/main.b3ecbc5e.chunk.js"
   ]
 }
