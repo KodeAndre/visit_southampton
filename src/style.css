@@ -162,17 +162,21 @@ h1 {
 
 /* Places */
 
-#placesContent {
+#placesWrapper {
     text-align: center;
 }
 
-details {
+#placesContent {
+    margin: 0 300px 0 300px;
+}
+
+#filterWrapper{
     position: fixed;
     top: 200px;
-    bottom: 0;
     padding: 5px 0 0 0;
     width: 200px;
-    background-color: #7B9FC3;
+    height: 650px;
+    background-color: #36375B;
 }
 
 .filter {
@@ -181,6 +185,15 @@ details {
 
 summary {
     cursor: pointer;
+}
+
+label, summary, #filterSum {
+    color: #fafafa;
+}
+
+#filterSumWrapper {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Footer */

@@ -21,39 +21,59 @@ export default function Filter() {
 
     return (
         <div>
-            <label htmlFor="restFilter" className="filter">Food type: </label>
+            <div id="filterWrapper">
 
-            <div>
-                <select name="restFilter" id="restFilter" defaultValue="default" onChange={handleChange1}>
-                
-                    <option value="default" disabled>Choose One</option>
-                    <optgroup label="Restaurants">
-                        <option value="Dolly Dimples">Dolly Dimples</option>
-                        <option value="Peppes Pizza">Peppes Pizza</option>
-                        <option value="Egon">Egon</option>
-                    </optgroup>
-                    <optgroup label="Fast Foods">
-                        <option value="McDonalds">McDonalds</option>
-                        <option value="Dominos">Dominos</option>
-                        <option value="KFC">KFC</option>
-                    </optgroup>
-                </select>
-            </div>
+                <details>
 
-            <label htmlFor="eventFilter" className="filter">Event type: </label>
+                    <summary>
+                        Click for list of filters
+                    </summary>
 
-            <div>
+                <label htmlFor="restFilter" className="filter">Food type: </label>
 
-                <select name="eventFilter" id="eventFilter" defaultValue="default" onChange={handleChange2}>
-                    <option value="default" disabled>Choose One</option>
-                        <option value="Fiesta">Fiesta</option>
-                        <option value="Party">Party</option>
-                        <option value="LAN">LAN</option>
-                </select>
-            </div>
+                <div>
+                    <select name="restFilter" id="restFilter" defaultValue="default" onChange={handleChange1}>
+            
+                        <option value="" >None</option>
+                        
+                        <optgroup label="Restaurants">
 
-            <div>
-                <p>Filters applied: <b>{rest.value}</b>, <b>{eve.value}</b></p>
+                            <option value="Dolly Dimples">Dolly Dimples</option>
+                            <option value="Peppes Pizza">Peppes Pizza</option>
+                            <option value="Egon">Egon</option>
+
+                        </optgroup>
+
+                        <optgroup label="Fast Foods">
+
+                            <option value="McDonalds">McDonalds</option>
+                            <option value="Dominos">Dominos</option>
+                            <option value="KFC">KFC</option>
+
+                        </optgroup>
+
+                    </select>
+                </div>
+
+                <label htmlFor="eventFilter" className="filter">Event type: </label>
+
+                <div>
+                    <select name="eventFilter" id="eventFilter" defaultValue="default" onChange={handleChange2}>
+
+                            <option value="">None</option>
+                            <option value="Fiesta">Fiesta</option>
+                            <option value="Party">Party</option>
+                            <option value="LAN">LAN</option>
+
+                    </select>
+                </div>
+
+                </details>
+
+                <div id="filterSumWrapper">
+                    <p id="filterSum">Filters applied: <b>{rest.value}</b>, <b>{eve.value}</b></p>
+                </div>
+
             </div>
         </div>
     )

@@ -9,15 +9,12 @@ import Filter from './Filter'
 export default function Places() {
 
     return (
-        <div id="placesContent">
-            <h2>Places and Events to visit and try out!</h2>
-            <details>
-                <summary>
-                    Click for list of filters
-                </summary>
-                <Filter />
-            </details>
-            <p>proof that the filter isnt pushing content</p>
+        <div id="placesWrapper">
+                    <Filter />
+                <div id="placesContent">
+                <h2>Places and Events to visit and try out!</h2>
+                <p>proof that the filter isnt pushing content</p>
+            </div>
         </div>
     )
 }
