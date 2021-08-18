@@ -23,6 +23,15 @@ h1 {
     font-size: 36px;
 }
 
+#appBody {
+    position: relative;
+    min-height: 100vh;
+}
+
+#main {
+    padding-bottom: 2.5rem;
+}
+
 /* Navbar css */
 
 .navbar{
@@ -159,12 +168,28 @@ h1 {
 
 select {
     margin-right: 10px;
+    white-space: wrap;
+}
+
+details {
+    position: fixed;
+    top: 220px;
+    bottom: 0;
+    padding: 4px;
+    width: 200px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+
+summary {
+    cursor: pointer;
 }
 
 /* Footer */
 
 #footer {
-    position: static;
+    position: absolute;
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
@@ -174,11 +199,9 @@ select {
     grid-template-areas:
         "Creator Info";
     bottom: 0;
-    left: 0;
     background-color: #7B9FC3;
     color: #fff;
     width: 100%;
-    margin: 0;
     padding-bottom: 1px;
 }
 
@@ -204,7 +227,7 @@ select {
 .map-container {
     z-index: 99999999999999999999;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
   }
 
   .sidebar {

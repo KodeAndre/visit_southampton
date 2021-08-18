@@ -25,7 +25,6 @@ export default function App() {
           <div className="nav-wrapper" style={{height: "150px"}}>
             <TopNav />
           </div>
-            
       
         <div id="content">
           <Switch>
@@ -51,11 +50,11 @@ export default function App() {
           </Switch>
         </div>
 
+      </div>
+
         <div id="footer-wrapper" style={{height: "91px"}}>
           <Footer />
         </div>
-
-      </div>
 
       </Router>
 
