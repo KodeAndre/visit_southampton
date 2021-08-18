@@ -197,10 +197,11 @@ label, summary, #filterSum {
 }
 
 #planet {
-    height: 600px;
-    width: 600px;
+    height: 900px;
+    width: 900px;
     vertical-align: middle;
     display: inline-block;
+    margin-bottom: 15px;
 }
 
 /* Footer */
