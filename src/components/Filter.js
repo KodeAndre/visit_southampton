@@ -11,12 +11,12 @@ export default function Filter() {
 
     function handleChange1(e) {
         setRest({value: e.target.value})
-        console.log("User filtered by: " + e.target.value)
+        console.log("User filtered Food type by: " + e.target.value)
     }
 
     function handleChange2(e) {
         setEve({value: e.target.value})
-        console.log("User filtered by: " + e.target.value)
+        console.log("User filtered Event by: " + e.target.value)
     }
 
     return (
