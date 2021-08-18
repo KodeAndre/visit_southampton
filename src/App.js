@@ -52,7 +52,7 @@ export default function App() {
 
       </div>
 
-        <div id="footer-wrapper" style={{height: "91px"}}>
+        <div id="footer-wrapper" style={{height: "50px"}}>
           <Footer />
         </div>
 
