@@ -199,14 +199,6 @@ label, summary, #filterSum {
     bottom: 0;
 }
 
-#canvas {
-    height: 900px;
-    width: 900px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
 /* Footer */
 
 #footer {
@@ -376,36 +368,44 @@ label, summary, #filterSum {
 
     .toggled {
     display: grid;
-    z-index: 0;
     position: fixed;
     inset: 100px 0 0 0;
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1.5fr 1fr; 
     gap: 0px 0px;
     grid-template-areas: 
       "About"
       "PlacesPhone"
-      "Map"; 
-    justify-items: center; 
-    width: 100%; 
+      "Map";
+    width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #36375B;
 }
 
     .About {
         grid-area: About;
-        background-color:#36375B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
     }
 
     .PlacesPhone {
         grid-area: PlacesPhone;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #651447;
+        font-size: 32px;
     }
 
     .Map {
         grid-area: Map;
-        background-color:#36375B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
     }
 
     /* Searchbar and button */
@@ -498,15 +498,7 @@ label, summary, #filterSum {
         position: absolute;
         bottom: 0;
     }
-    
-    #canvas {
-        height: 900px;
-        width: 900px;
-        vertical-align: middle;
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-    
+
     /* Footer */
     
     #footer {

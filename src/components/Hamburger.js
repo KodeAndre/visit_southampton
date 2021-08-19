@@ -2,10 +2,9 @@ import React from 'react'
 // eslint-disable-next-line
 import Style from "../style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars as HB, faCross as Cross } from '@fortawesome/free-solid-svg-icons'
-
+import { faBars as HB, faTimes as Cross } from '@fortawesome/free-solid-svg-icons'
 // eslint-disable-next-line
-import Menu from "./HamMenu"
+import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 
 export default function Hamburger() {
 
@@ -33,8 +32,18 @@ export default function Hamburger() {
     return (
         <div>
             <FontAwesomeIcon icon={Icon} onClick={iconChange}/>
+
             <div className={x.join(" ")}>
-                <Menu />
+                <h2 className="About">
+                    <Link to="About">About</Link>
+                </h2>
+                <h2 className="PlacesPhone">
+                    <Link to="PlacesToVisit">Places To Visit</Link>
+                </h2>
+                <h2 className="Map">
+                    <Link to="Map">Map</Link>
+                </h2>
+                
             </div>
         </div>
     )
