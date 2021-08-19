@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, {useEffect} from 'react';
 // eslint-disable-next-line
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
