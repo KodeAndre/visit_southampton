@@ -34,6 +34,10 @@ h1 {
 
 /* Navbar css */
 
+#nav-wrapper {
+    height: 150px;
+}
+
 .navbar{
     width: 100%;
     min-height: 100px;
@@ -41,7 +45,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7B9FC3;
     transition: all .2s ease;
     z-index: 99999999;
     background: linear-gradient(150deg, #36375B 25%, #7B9FC3 1%);
@@ -248,7 +251,7 @@ label, summary, #filterSum {
     height: 70vh;
   }
 
-  .sidebar {
+.sidebar {
     display: none;
     position: absolute;
     top: 150x;
@@ -261,4 +264,272 @@ label, summary, #filterSum {
     font-weight: bold;
   }
 
+}
+
+/* Phones */
+@media (max-width:768px) {
+    :root {
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        font-size: 16px;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #appBody {
+        position: relative;
+        min-height: 100vh;
+    }
+    
+    #main {
+        padding-bottom: 2.5rem;
+    }
+    
+    /* Navbar css */
+
+    #nav-wrapper {
+        height: 100px;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: 100px;
+        transition: all .2s ease;
+        z-index: 99999999;
+        background: linear-gradient(90deg, #36375B 25%, #7B9FC3 1%);
+        display: grid; 
+        grid-auto-flow: column; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.335fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "Hamburger Title";
+        align-content: center;
+        align-items: center;
+      }
+
+    .navbar h1 {
+        word-break: break-word;
+        font-size: 2em;
+        margin-left: 5px;
+    }
+
+    .navbar #Hamburger {
+        font-size: 50px;
+    }
+      
+    .scrolled{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #7B9FC3;
+        z-index: 99999999;
+        height: 60px;
+      }
+    
+    .scrolled h1 {
+        font-size: 26px;
+    }
+
+    .scrolled #Hamburger {
+        font-size: 40px;
+    }
+
+    #navleft {
+        grid-area: Title;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #Hamburger {
+        grid-area: Hamburger;
+        justify-self: center;
+        align-self: center;
+        color: #fafafa;
+    }
+
+    #title{
+        margin: 0px;
+    }
+    
+    .navright {
+        display: none;
+    }
+    
+    /* Searchbar and button */
+    
+    .searchfield {
+        display:none;
+    }
+
+    .searchbutton {
+        display: none;
+    }
+    
+    /* Content */
+    
+    #content {
+        margin: auto;
+        z-index: -1;
+        text-align: center;
+    }
+    
+    #mainContent {
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #arrowdown {
+        display:none;
+        font-size: 64px;
+        margin-top: 50px;
+        animation: bounce 2s infinite;
+        cursor: pointer;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome, Edge, Opera and Firefox */
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+          transform: translateY(20px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    
+    /* About */
+    
+    #about {
+        margin-left: 50px;
+        text-align: left;
+    }
+    
+    /* Places */
+    
+    #placesWrapper {
+        text-align: center;
+    }
+    
+    #placesContent {
+        margin: 0 300px 0 300px;
+    }
+    
+    #filterWrapper{
+        position: fixed;
+        top: 200px;
+        padding: 5px 0 0 0;
+        width: 200px;
+        height: 650px;
+        background-color: #36375B;
+    }
+    
+    .filter {
+        margin: 10px 0 10px 0;
+    }
+    
+    summary {
+        cursor: pointer;
+    }
+    
+    label, summary, #filterSum {
+        color: #fafafa;
+    }
+    
+    #filterSumWrapper {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #canvas {
+        height: 900px;
+        width: 900px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    
+    #footer {
+        position: absolute;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "Creator Info";
+        bottom: 0;
+        background-color: #7B9FC3;
+        color: #fff;
+        width: 100%;
+        padding-bottom: 1px;
+    }
+    
+    #Creator {
+        margin-left: 50px;
+        grid-area: Creator;
+    }
+    
+    #Info {
+        grid-area: Info;
+        justify-self: end;
+        margin-right: 50px;
+        margin-bottom: 5px;
+    }
+    
+    #socials {
+        display: flex;
+        gap: 0 5px;
+    }
+    
+    /* Map css */
+    
+    .map-container {
+        z-index: 99999999999999999999;
+        width: 100%;
+        height: 70vh;
+      }
+    
+      .sidebar {
+        display: none;
+        position: absolute;
+        top: 150x;
+        left: 0;
+        margin: 12px;
+        background-color: #404040;
+        color: #ffffff;
+        z-index: 1 !important;
+        padding: 6px;
+        font-weight: bold;
+      }
+    
+}
+
+@media (min-width: 426px) and (max-width:768px) {
+    .navbar h1 {
+        word-break: break-word;
+        font-size: 2em;
+        text-align: center;
+    }
 }

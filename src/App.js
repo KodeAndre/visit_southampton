@@ -22,7 +22,7 @@ export default function App() {
       <Router basename="/visit_southampton">
 
       <div id="main">
-          <div className="nav-wrapper" style={{height: "150px"}}>
+          <div className="nav-wrapper">
             <TopNav />
           </div>
       

@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-rou
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch as Search } from '@fortawesome/free-solid-svg-icons'
 
+import Hamburger from "./Hamburger"
+
 export default function Navbar() {
 
     const [scrolled, setScrolled] = React.useState(false);
@@ -32,6 +34,10 @@ export default function Navbar() {
 
     return (
       <div className={x.join(" ")}>
+
+          <div id="Hamburger">
+            <Hamburger />
+          </div>
 
                 <div className="navleft">
                         <h1 id="Title">
