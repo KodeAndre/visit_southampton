@@ -35,15 +35,15 @@ export default function Hamburger() {
 
             <div className={x.join(" ")}>
                 <h2 className="About">
-                    <Link to="About">About</Link>
+                    <Link to="About" onClick={iconChange}>About</Link>
                 </h2>
                 <h2 className="PlacesPhone">
-                    <Link to="PlacesToVisit">Places To Visit</Link>
+                    <Link to="PlacesToVisit" onClick={iconChange}>Places To Visit</Link>
                 </h2>
                 <h2 className="Map">
-                    <Link to="Map">Map</Link>
+                    <Link to="Map" onClick={iconChange}>Map</Link>
                 </h2>
-                
+
             </div>
         </div>
     )
