@@ -5,15 +5,15 @@ import ReactDOM from 'react-dom'
 import Style from "../style.css"
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYW5hcmNoeXRyZXgiLCJhIjoiY2tzZWcxbXRkMGdveTMwb2Y5emJiYWIzayJ9.TLf8xLuGslSixuDMhQd_rQ';
 
-export default function Map() {
+
+export default function AreaMap() {
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW5hcmNoeXRyZXgiLCJhIjoiY2tzZWcxbXRkMGdveTMwb2Y5emJiYWIzayJ9.TLf8xLuGslSixuDMhQd_rQ';
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-1.4072);
   const [lat, setLat] = useState(50.9010);
   const [zoom, setZoom] = useState(12.95);
-
   
   useEffect(() => {
     if (map.current) return; // initialize map only once
