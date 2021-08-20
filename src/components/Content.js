@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import Style from "../style.css"
 import demo from "../media/demo.mp4"
-import flag from "../media/souton.png"
+import hero from "../media/hero.jpg"
 
 export default function Content() {
     const ref = useRef(null)
@@ -66,7 +66,7 @@ export default function Content() {
     const mobile = 
         <div>
             <div>
-                <img src={flag} alt="Hero" style={{width: "100%"}}></img>
+                <img src={hero} alt="Hero" style={{width: "100%"}}></img>
             </div>
             <div id="mainContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus, orci non tincidunt gravida, est tellus consequat nulla, eget eleifend sapien lorem sed enim. Donec ut nisl vitae leo ullamcorper pharetra. Ut sit amet nunc at mauris faucibus luctus hendrerit et ipsum. Aenean consequat euismod suscipit. Etiam ut laoreet arcu. Phasellus rutrum urna id enim tincidunt, vel dictum sem bibendum. Sed malesuada feugiat mauris, quis tincidunt magna rhoncus eget. Integer tincidunt porta metus nec auctor. Donec venenatis dapibus urna ut aliquet. Suspendisse at risus vitae diam accumsan facilisis luctus vitae nulla. Nulla vehicula lobortis tempus. Vivamus vehicula arcu vel ipsum condimentum, eu dapibus quam tempus. Suspendisse sed leo nec lacus auctor tempus eget sagittis eros. Pellentesque vehicula nec diam quis aliquam. Maecenas vel iaculis augue. Pellentesque eget velit eu odio ornare fermentum nec a orci.
