@@ -20,15 +20,35 @@ export default function Hamburger() {
         x.push('toggled');
       }
 
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 150 ) {
-        setScrolled(true);
+      const handleScroll = () => {
+        if (window.matchMedia("(min-width: 769px)").matches){
+          const offset = window.scrollY;
+          if (offset > 150 ) {
+            setScrolled(true);
+          }
+          if (offset <= 150 ) {
+            setScrolled(false);
+          }
+        } 
+        if (window.matchMedia("(max-width: 425px)").matches) {
+          const offset = window.scrollY;
+          if (offset > 100 ) {
+            setScrolled(true);
+          }
+          if (offset <= 100 ) {
+            setScrolled(false);
+          }
+        }
+        if (window.matchMedia("(min-width: 426px) and (max-width: 768px)").matches) {
+          const offset = window.scrollY;
+          if (offset > 100 ) {
+            setScrolled(true);
+          }
+          if (offset <= 100 ) {
+            setScrolled(false);
+          }
+        }
       }
-      if (offset <= 150 ) {
-        setScrolled(false);
-      }
-    }
 
     React.useEffect(() => {
       window.addEventListener('scroll', handleScroll)

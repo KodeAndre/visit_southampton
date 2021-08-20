@@ -15,6 +15,7 @@ export default function Navbar() {
     const [scrolled, setScrolled] = React.useState(false);
   
     const handleScroll = () => {
+    if (window.matchMedia("(min-width: 769px)").matches){
       const offset = window.scrollY;
       if (offset > 150 ) {
         setScrolled(true);
@@ -22,7 +23,27 @@ export default function Navbar() {
       if (offset <= 150 ) {
         setScrolled(false);
       }
+    } 
+    if (window.matchMedia("(max-width: 425px)").matches) {
+      const offset = window.scrollY;
+      if (offset > 100 ) {
+        setScrolled(true);
+      }
+      if (offset <= 100 ) {
+        setScrolled(false);
+      }
     }
+    if (window.matchMedia("(min-width: 426px) and (max-width: 768px)").matches) {
+      const offset = window.scrollY;
+      if (offset > 100 ) {
+        setScrolled(true);
+      }
+      if (offset <= 100 ) {
+        setScrolled(false);
+      }
+    }
+  }
+
     useEffect(() => {
       window.addEventListener('scroll', handleScroll)
     })
