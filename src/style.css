@@ -388,7 +388,11 @@ label, summary, #filterSum {
     width: 100%;
     height: 100vh;
     background-color: #36375B;
-}
+    }
+
+    .scrolledBurg {
+        inset: 60px 0 0 0;
+    }
 
     .About {
         grid-area: About;

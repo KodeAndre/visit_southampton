@@ -9,14 +9,34 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-rou
 export default function Hamburger() {
 
     const [toggled, setToggled] = React.useState(false);
-    
+
+    const [Icon, setIcon] = React.useState(HB);
+
+    const [scrolled, setScrolled] = React.useState(false);
+
     let x=['menu'];
 
     if (toggled){
         x.push('toggled');
       }
 
-    const [Icon, setIcon] = React.useState(HB);
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 150 ) {
+        setScrolled(true);
+      }
+      if (offset <= 150 ) {
+        setScrolled(false);
+      }
+    }
+
+    React.useEffect(() => {
+      window.addEventListener('scroll', handleScroll)
+    })
+  
+    if (scrolled){
+      x.push('scrolledBurg');
+    }
 
     function iconChange() {
         if (toggled === true) {
