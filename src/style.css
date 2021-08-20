@@ -438,9 +438,7 @@ label, summary, #filterSum {
     }
     
     #mainContent {
-        margin-top: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 40px 10px 20px 10px;
     }
     
     #arrowdown {
@@ -530,14 +528,15 @@ label, summary, #filterSum {
     }
     
     #Creator {
-        margin-left: 50px;
+        margin-left: 30px;
         grid-area: Creator;
+        font-size: 12px;
     }
     
     #Info {
         grid-area: Info;
         justify-self: end;
-        margin-right: 50px;
+        margin-right: 30px;
         margin-bottom: 5px;
     }
     
@@ -583,5 +582,9 @@ label, summary, #filterSum {
         word-break: break-word;
         font-size: 2em;
         text-align: center;
+    }
+
+    #Creator {
+        font-size: 16px;
     }
 }
