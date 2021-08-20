@@ -468,7 +468,7 @@ label, summary, #filterSum {
     /* About */
     
     #about {
-        margin-left: 50px;
+        margin: 0 5px 0 5px;
         text-align: left;
     }
     
@@ -479,15 +479,15 @@ label, summary, #filterSum {
     }
     
     #placesContent {
-        margin: 0 300px 0 300px;
+        margin: 0 5px 0 125px;
     }
-    
+
     #filterWrapper{
         position: fixed;
-        top: 200px;
+        top: 135px;
+        height: 400px;
         padding: 5px 0 0 0;
-        width: 200px;
-        height: 650px;
+        width: 125px;
         background-color: #36375B;
     }
     
@@ -586,5 +586,14 @@ label, summary, #filterSum {
 
     #Creator {
         font-size: 16px;
+    }
+
+    #placesContent {
+        margin: 0 25px 0 205px;
+    }
+
+    #filterWrapper {
+        top: 135px;
+        height: 400px;
     }
 }

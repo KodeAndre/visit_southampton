@@ -26,7 +26,7 @@ export default function Filter() {
                 <details>
 
                     <summary>
-                        Click for list of filters
+                        Filters
                     </summary>
 
                 <label htmlFor="restFilter" className="filter">Food type: </label>
