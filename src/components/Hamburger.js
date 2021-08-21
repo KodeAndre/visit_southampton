@@ -38,7 +38,7 @@ export default function Hamburger() {
           if (offset <= 100 ) {
             setScrolled(false);
           }
-        }
+        } // dont remove the if under this line, it fixes a memory leak.
         if (window.matchMedia("(min-width: 426px) and (max-width: 768px)").matches) {
           const offset = window.scrollY;
           if (offset > 100 ) {
@@ -46,7 +46,7 @@ export default function Hamburger() {
           }
           if (offset <= 100 ) {
             setScrolled(false);
-          }
+          } // dont remove the above if, it fixes a memory leak.
         }
       }
 
