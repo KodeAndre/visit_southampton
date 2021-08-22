@@ -9,7 +9,7 @@ import Card from "./Cards"
 
 export default function Places() {
 
-    return (
+    const desktop = 
         <div id="placesWrapper">
                     <Filter />
                 <div id="placesContent">
@@ -17,5 +17,16 @@ export default function Places() {
                 <Card />
             </div>
         </div>
-    )
+    
+    const mobile = 
+            <div id="placesContent">
+                <h2>Places and Events to visit and try out!</h2>
+                <Card />
+            </div>
+
+    if (window.matchMedia('(min-width: 769px)').matches) {
+        return desktop
+    } else {
+        return mobile
+    }
 }

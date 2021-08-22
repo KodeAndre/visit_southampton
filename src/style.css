@@ -501,6 +501,67 @@ label, summary, #filterSum {
     #mainContent {
         margin: 40px 10px 20px 10px;
     }
+
+    #cards {
+        display: grid; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr;  
+        justify-items: center; 
+        align-items: center; 
+        width: 100%; 
+        height: 100%;
+    }
+    
+    #cardStyle {
+        display: grid;
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "cardImage"
+        "cardTextContainer"; 
+        width: 40vw;
+        height: auto;
+        margin: 0 0 20px 0;
+        border: 4px solid #651447;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    
+    #cardTextContainer {
+        grid-area: cardTextContainer;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 5px;
+        grid-template-areas:
+          "cardName"
+          "cardInfo";
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cardImage {
+        grid-area: cardImage;
+        width: 40vw;
+        height: 20vh;
+        border-radius: 0;
+    }
+    .cardName {
+        grid-area: cardName;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.3em;
+    }
+    .cardInfo {
+        grid-area: cardInfo;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
     
     #arrowdown {
         display:none;
@@ -540,7 +601,8 @@ label, summary, #filterSum {
     }
     
     #placesContent {
-        margin: 0 5px 0 125px;
+        text-align: center;
+        margin: 0 5px;
     }
 
     #filterWrapper{
@@ -650,7 +712,8 @@ label, summary, #filterSum {
     }
 
     #placesContent {
-        margin: 0 25px 0 205px;
+        margin: 0 5px;
+        text-align: center;
     }
 
     #filterWrapper {
