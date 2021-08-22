@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/visit_southampton/static/css/main.c7ca6f2e.chunk.css",
-    "main.js": "/visit_southampton/static/js/main.f6d080fe.chunk.js",
-    "main.js.map": "/visit_southampton/static/js/main.f6d080fe.chunk.js.map",
+    "main.css": "/visit_southampton/static/css/main.a1769e2b.chunk.css",
+    "main.js": "/visit_southampton/static/js/main.68da5e99.chunk.js",
+    "main.js.map": "/visit_southampton/static/js/main.68da5e99.chunk.js.map",
     "runtime-main.js": "/visit_southampton/static/js/runtime-main.b61c81b9.js",
     "runtime-main.js.map": "/visit_southampton/static/js/runtime-main.b61c81b9.js.map",
-    "static/js/2.15820ada.chunk.js": "/visit_southampton/static/js/2.15820ada.chunk.js",
-    "static/js/2.15820ada.chunk.js.map": "/visit_southampton/static/js/2.15820ada.chunk.js.map",
+    "static/js/2.4388598f.chunk.js": "/visit_southampton/static/js/2.4388598f.chunk.js",
+    "static/js/2.4388598f.chunk.js.map": "/visit_southampton/static/js/2.4388598f.chunk.js.map",
     "index.html": "/visit_southampton/index.html",
-    "static/css/main.c7ca6f2e.chunk.css.map": "/visit_southampton/static/css/main.c7ca6f2e.chunk.css.map",
-    "static/js/2.15820ada.chunk.js.LICENSE.txt": "/visit_southampton/static/js/2.15820ada.chunk.js.LICENSE.txt",
+    "static/css/main.a1769e2b.chunk.css.map": "/visit_southampton/static/css/main.a1769e2b.chunk.css.map",
+    "static/js/2.4388598f.chunk.js.LICENSE.txt": "/visit_southampton/static/js/2.4388598f.chunk.js.LICENSE.txt",
     "static/media/demo.32647d13.mp4": "/visit_southampton/static/media/demo.32647d13.mp4",
     "static/media/hero.86469438.jpg": "/visit_southampton/static/media/hero.86469438.jpg",
     "static/media/souton.646e5a34.png": "/visit_southampton/static/media/souton.646e5a34.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b61c81b9.js",
-    "static/js/2.15820ada.chunk.js",
-    "static/css/main.c7ca6f2e.chunk.css",
-    "static/js/main.f6d080fe.chunk.js"
+    "static/js/2.4388598f.chunk.js",
+    "static/css/main.a1769e2b.chunk.css",
+    "static/js/main.68da5e99.chunk.js"
   ]
 }
