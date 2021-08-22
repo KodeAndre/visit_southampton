@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import Style from "../style.css"
 
 import Filter from './Filter'
+import Card from "./Cards"
 
 export default function Places() {
 
@@ -13,7 +14,7 @@ export default function Places() {
                     <Filter />
                 <div id="placesContent">
                 <h2>Places and Events to visit and try out!</h2>
-                <p>proof that the filter isnt pushing content</p>
+                <Card />
             </div>
         </div>
     )

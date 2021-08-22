@@ -71,6 +71,7 @@ export default function Filter() {
                 </details>
 
                 <div id="filterSumWrapper">
+                    <p style={{color: "#fafafa"}}>(this is just an example filter picker)</p>
                     <p id="filterSum">Filters applied: <b>{rest.value}</b>, <b>{eve.value}</b></p>
                 </div>
 
