@@ -30,5 +30,23 @@ export default [
     info: "Fast food place",
     category: "Fast foods",
     image: "https://picsum.photos/0/0"
-}, 
+}, {
+    id: "6",
+    name: "Great Event",
+    info: "Amazing and fun event",
+    category: "Events",
+    image: "https://picsum.photos/0/0"
+},{
+    id: "7",
+    name: "Great Event",
+    info: "Amazing and fun event",
+    category: "Events",
+    image: "https://picsum.photos/0/0"
+},{
+    id: "8",
+    name: "Great Event",
+    info: "Amazing and fun event",
+    category: "Events",
+    image: "https://picsum.photos/0/0"
+},
 ]

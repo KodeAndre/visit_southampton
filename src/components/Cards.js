@@ -21,7 +21,7 @@ export default function Cards(props) {
       {CardList.map(card => <CardItem card = {card} key={card.id}/>)}
     </div>
 
-  if (window.location.href.indexOf("/PlacesToVisit") > -1) {
+  if (window.location.href.indexOf("PlacesToVisit") > -1) {
     return places
   } else {
     return home
