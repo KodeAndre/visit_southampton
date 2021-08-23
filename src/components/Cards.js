@@ -10,9 +10,20 @@ import CardItem from "./CardItem"
 
 
 export default function Cards(props) {
-  return (
+
+  const home = 
+    <div id="cards">
+      {CardList.slice(0, 3).map(card => <CardItem card = {card} key={card.id}/>)}
+    </div>
+
+  const places = 
     <div id="cards">
       {CardList.map(card => <CardItem card = {card} key={card.id}/>)}
     </div>
-  );
+
+  if (window.location.href.indexOf("/PlacesToVisit") > -1) {
+    return places
+  } else {
+    return home
+  }
 }
